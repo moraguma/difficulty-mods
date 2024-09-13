@@ -5,7 +5,7 @@
   "description": {
     "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as difficult as you like."
   },
-  "repository": "",
+  "repository": "https://github.com/Azure-Lazuline/difficulty-mods",
   "tags": ["fun"],
   "authors": "Azure Lazuline",
   "icons": {
