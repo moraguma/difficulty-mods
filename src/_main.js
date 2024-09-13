@@ -1,6 +1,8 @@
 "use strict";
 
-sc.DIFFICULTYMODS_SCALE_ENEMY_HP = {
+window.difficultymods = {};
+
+difficultymods.SCALE_ENEMY_HP = {
   NORM: 1,
   HIGH1: 1.15,
   HIGH2: 1.30,
@@ -9,7 +11,7 @@ sc.DIFFICULTYMODS_SCALE_ENEMY_HP = {
   HIGH5: 1.80,
   HIGH6: 2.00,
 };
-sc.DIFFICULTYMODS_XP_GAIN = {
+difficultymods.XP_GAIN = {
   LOW6: 0.4,
   LOW5: 0.5,
   LOW4: 0.6,
@@ -18,7 +20,7 @@ sc.DIFFICULTYMODS_XP_GAIN = {
   LOW1: 0.9,
   NORM: 1,
 };
-sc.DIFFICULTYMODS_ENEMY_DAMAGE = {
+difficultymods.ENEMY_DAMAGE = {
   NORM: 1,
   HIGH1: 1.25,
   HIGH2: 1.5,
@@ -27,7 +29,7 @@ sc.DIFFICULTYMODS_ENEMY_DAMAGE = {
   HIGH5: 2.25,
   HIGH6: 2.5,  
 };
-sc.DIFFICULTYMODS_HEALING = {
+difficultymods.HEALING = {
   LOW5: 0.01,
   LOW4: 0.2,
   LOW3: 0.4,
@@ -43,8 +45,8 @@ for (let [key, value] of Object.entries(sc.OPTIONS_DEFINITION)) {
         case "game-sense":
             options["difficultymods-enemy-damage"] = {
 				type: 'OBJECT_SLIDER',
-				data: sc.DIFFICULTYMODS_ENEMY_DAMAGE,
-				init: sc.DIFFICULTYMODS_ENEMY_DAMAGE.NORM,
+				data: difficultymods.ENEMY_DAMAGE,
+				init: difficultymods.ENEMY_DAMAGE.NORM,
 				cat: sc.OPTION_CATEGORY.GENERAL,
 				fill: true,
 				showPercentage: true,
@@ -53,8 +55,8 @@ for (let [key, value] of Object.entries(sc.OPTIONS_DEFINITION)) {
             };
             options["difficultymods-enemy-hp"] = {
 				type: 'OBJECT_SLIDER',
-				data: sc.DIFFICULTYMODS_SCALE_ENEMY_HP,
-				init: sc.DIFFICULTYMODS_SCALE_ENEMY_HP.NORM,
+				data: difficultymods.SCALE_ENEMY_HP,
+				init: difficultymods.SCALE_ENEMY_HP.NORM,
 				cat: sc.OPTION_CATEGORY.GENERAL,
 				fill: true,
 				showPercentage: true,
@@ -63,8 +65,8 @@ for (let [key, value] of Object.entries(sc.OPTIONS_DEFINITION)) {
             };
             options["difficultymods-healing"] = {
 				type: 'OBJECT_SLIDER',
-				data: sc.DIFFICULTYMODS_HEALING,
-				init: sc.DIFFICULTYMODS_HEALING.NORM,
+				data: difficultymods.HEALING,
+				init: difficultymods.HEALING.NORM,
 				cat: sc.OPTION_CATEGORY.GENERAL,
 				fill: true,
 				showPercentage: true,
@@ -73,8 +75,8 @@ for (let [key, value] of Object.entries(sc.OPTIONS_DEFINITION)) {
             };
             options["difficultymods-xp-gain"] = {
 				type: 'OBJECT_SLIDER',
-				data: sc.DIFFICULTYMODS_XP_GAIN,
-				init: sc.DIFFICULTYMODS_XP_GAIN.NORM,
+				data: difficultymods.XP_GAIN,
+				init: difficultymods.XP_GAIN.NORM,
 				cat: sc.OPTION_CATEGORY.GENERAL,
 				fill: true,
 				showPercentage: true,
