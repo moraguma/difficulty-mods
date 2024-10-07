@@ -56,4 +56,3 @@ sc.BurnStatus.inject({
 		return value;
 	}
 });
-//i tried to do it for jolt too, but there's no easy way to adjust the *damage*, just the *frequency*. Ah well
