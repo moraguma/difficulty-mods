@@ -45,14 +45,19 @@ sc.CombatParams.inject({
 	},
 });
 
-//make burn have lessened effectiveness to compensate, since it's percentage-based otherwise.
-//technically this applies the burn/jolt scaling to *everything* even enemies without scaled HP, but there are very few of those, and
-//there's no easy way to get what enemy is being affected in this function. I could copypaste and modify the entire main burn function
-//instead, which does know about the enemy, but then that breaks compatibility with any other mod that affects those (and it just feels really dirty)
+//make burn have lessened effectiveness to compensate, since it's percentage-based otherwise
+sc.BurnStatus.inject({
+	activate(b, a, d){
+		if(a && a.combatant && a.combatant.difficultyModsScaledHP)
+			this.difficultyModsScaledHP = a.combatant.difficultyModsScaledHP;
+
+		return this.parent(b, a, d);
+	}
+});
 sc.BurnStatus.inject({
 	getEffectiveness(b){
 		var value = this.parent(b);
-		value /= sc.options.get("difficultymods-enemy-hp");
+		if(this.difficultyModsScaledHP) value /= this.difficultyModsScaledHP;
 		return value;
 	}
 });
