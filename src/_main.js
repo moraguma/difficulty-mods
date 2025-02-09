@@ -3,19 +3,22 @@
 window.difficultymods = {};
 
 difficultymods.ENEMY_DAMAGE = {
-  LOW6: 0.2,
-  LOW5: 0.3,
-  LOW4: 0.4,
-  LOW3: 0.5,
-  LOW2: 0.6,
-  LOW1: 0.8,
+  LOW6: 0.4,
+  LOW5: 0.5,
+  LOW4: 0.6,
+  LOW3: 0.7,
+  LOW2: 0.8,
+  LOW1: 0.9,
   NORM: 1,
   HIGH1: 1.25,
   HIGH2: 1.5,
   HIGH3: 1.75,
   HIGH4: 2.0,
   HIGH5: 2.25,
-  HIGH6: 2.5,  
+  HIGH6: 2.5,
+  HIGH7: 3.0,
+  HIGH8: 3.5,
+  HIGH9: 4.0
 };
 difficultymods.SCALE_ENEMY_HP = {
   LOW6: 0.7,
@@ -31,6 +34,10 @@ difficultymods.SCALE_ENEMY_HP = {
   HIGH4: 1.65,
   HIGH5: 1.80,
   HIGH6: 2.00,
+  HIGH7: 2.50,
+  HIGH8: 3.00,
+  HIGH9: 3.50,
+  HIGH10: 4.0
 };
 difficultymods.ATTACK_FREQ = {
   LOW6: 0.4,
@@ -61,6 +68,8 @@ difficultymods.HEALING = {
   HIGH5: 1.5,
 };
 difficultymods.XP_GAIN = {
+  LOW8: 0.2,
+  LOW7: 0.3,
   LOW6: 0.4,
   LOW5: 0.5,
   LOW4: 0.6,
