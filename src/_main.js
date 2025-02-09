@@ -3,12 +3,12 @@
 window.difficultymods = {};
 
 difficultymods.ENEMY_DAMAGE = {
-  LOW6: 0.2,
-  LOW5: 0.3,
-  LOW4: 0.4,
-  LOW3: 0.5,
-  LOW2: 0.6,
-  LOW1: 0.8,
+  LOW6: 0.4,
+  LOW5: 0.5,
+  LOW4: 0.6,
+  LOW3: 0.7,
+  LOW2: 0.8,
+  LOW1: 0.9,
   NORM: 1,
   HIGH1: 1.25,
   HIGH2: 1.5,
