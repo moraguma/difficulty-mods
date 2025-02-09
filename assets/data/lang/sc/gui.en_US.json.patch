@@ -4,23 +4,23 @@
             "headers": {
                 "difficulty-mods": "Difficulty Mods"
             },
-            "difficultymods-enemy-damage": {
+            "difficultymods-enemy-damage2": {
                 "name": "Received Damage",
                 "description": "Scales the amount of damage you receive from enemies."
             },
-            "difficultymods-enemy-hp": {
+            "difficultymods-enemy-hp2": {
                 "name": "Enemy HP",
                 "description": "Scales the hitpoints and break meters of all enemies (including bosses)."
             },
-            "difficultymods-attack-freq": {
+            "difficultymods-attack-freq2": {
                 "name": "Enemy Speed",
                 "description": "Scales how often enemies attack and the speed they recover from stun/break."
             },
-            "difficultymods-healing": {
+            "difficultymods-healing2": {
                 "name": "Healing",
                 "description": "Scales the amount of healing in-combat from sandwiches, regen, etc."
             },
-            "difficultymods-xp-gain": {
+            "difficultymods-xp-gain2": {
                 "name": "EXP Gain",
                 "description": "Scales the amount of EXP you gain from all sources."
             },

@@ -4,7 +4,7 @@ function replaceProp(obj, prop, replaceFunc) {
 replaceProp(sc.PlayerLevelTools, "computeExp", (originalComputeExp) => {
 	return (...args) => {
 		var exp = originalComputeExp.call(sc.PlayerLevelTools, ...args);
-		exp = Math.round(exp * sc.options.get("difficultymods-xp-gain"));
+		exp = Math.round(exp * sc.options.get("difficultymods-xp-gain2"));
 		if(exp < 1) exp = 1;
 		return exp;
 	};

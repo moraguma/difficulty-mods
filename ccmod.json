@@ -1,9 +1,9 @@
 {
   "id": "difficulty-mods",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "title": "Difficulty Mods",
   "description": {
-    "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as difficult as you like."
+    "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as easy or hard as you like."
   },
   "repository": "https://github.com/Azure-Lazuline/difficulty-mods",
   "tags": ["fun"],
@@ -12,5 +12,6 @@
     "24": "icon24.png"
   },
   "prestart": "src/_prestart.js",
+  "poststart": "src/_poststart.js",
   "assets": ["data/lang/sc/gui.en_US.json.patch"]
 }
